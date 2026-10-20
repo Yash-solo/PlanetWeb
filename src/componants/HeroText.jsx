@@ -34,6 +34,13 @@ const HeroText = (props) => {
                     }} className="w-14 p-1 cursor-pointer overflow-hidden rounded-[5px] h-14 border border-[#ddd] ">    
                         <img  src="./images/mars.jpg" alt="Mars" />
                     </div>
+                    <div onClick={()=>{
+                        props.PlanetId(5);
+                        setPText("Jupiter");
+                        setBtnBg("yellow")
+                    }} className="w-14 p-1 cursor-pointer overflow-hidden rounded-[5px] h-14 border border-[#ddd] ">    
+                        <img  src="./images/jupiter.jpg" alt="Jupiter" />
+                    </div>
                 </div>
             </div>
         </>
