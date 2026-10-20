@@ -5,7 +5,7 @@ import HeroText from "./componants/HeroText"
 const App = () => {
   return (
     <>
-      <section className="relative overflow-hidden w-full text-[#ddd] p-3 h-screen bg-[url('/images/space.png')]">
+      <section className="relative overflow-hidden w-full text-[#ddd] p-3 h-screen bg-[url('../public/images/space.png')]">
         <EarthPlanet/>
         <Navbar/>
         <HeroText/>
