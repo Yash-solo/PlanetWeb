@@ -15,10 +15,10 @@ const HeroText = (props) => {
     )
     const FakeTemp = (
         <>
-            <div className="absolute flex flex-col gap-2 p-2 bottom-[-20%] w-120 h-50 bg-[rgb(17,17,17)] rounded-2xl border border-[#ddd]">
-                <span className="text-lg cursor-pointer" onClick={()=>{
+            <div className="absolute transition-all druation-150 ease-in flex flex-col gap-2 p-2 px-5 bottom-[-20%] w-120 h-50 bg-[rgb(17,17,17)] rounded-2xl border border-[#ddd]">
+                <span className=" text-lg text-end cursor-pointer" onClick={()=>{
                     setSelect(!isSelect)
-                }}>✂</span>
+                }}>❌</span>
                 <div className="grid grid-cols-7 gap-2">
                     <div onClick={()=>{
                         props.PlanetId(3);
