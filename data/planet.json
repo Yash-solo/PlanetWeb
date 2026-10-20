@@ -10,5 +10,11 @@
         "PName":"Mars",
         "SPURl":"https://prod.spline.design/6wz-E2ICc6I7qcTA/scene.splinecode",
         "Btnbg":"orange"
+    },
+    {
+        "id":5,
+        "PName":"Jupiter",
+        "SPURl":"https://prod.spline.design/35el0wFjTNOlAIay/scene.splinecode",
+        "Btnbg":"yellow"
     }
 ]
