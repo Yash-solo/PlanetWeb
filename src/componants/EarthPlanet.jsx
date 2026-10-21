@@ -22,8 +22,8 @@ const EarthPlanet = (props) => {
     }
   return (
     <>
-        <div className="w-full h-full absolute bottom-[-50%]">
-            <Spline scene={filtered_planet[0].SPURl}/>
+        <div className="w-full h-full absolute bottom-[-10%]">
+            <Spline  scene={filtered_planet[0].SPURl}/>
         </div>
     </>
   )

@@ -15,7 +15,7 @@ const HeroText = (props) => {
     )
     const FakeTemp = (
         <>
-            <div className="absolute transition-all druation-150 ease-in flex flex-col gap-2 p-2 px-5 bottom-[-20%] w-120 h-50 bg-[rgb(17,17,17)] rounded-2xl border border-[#ddd]">
+            <div className="absolute transition-all druation-150 ease-in flex flex-col gap-2 p-2 px-5  w-120 h-50 bg-[rgb(17,17,17)] rounded-2xl border border-[#ddd]">
                 <span className=" text-lg text-end cursor-pointer" onClick={()=>{
                     setSelect(!isSelect)
                 }}>❌</span>
@@ -48,16 +48,15 @@ const HeroText = (props) => {
   return (
     <>
         <section className="grid grid-cols-2 h-full w-full grid-rows-2">
-            <div className="flex items-center flex-col gap-2 justify-center ">
+            <div className="flex items-start flex-col gap-2 p-10 justify-start">
                 <h2 className="text-4xl font-mono">Welcome to Planet Web!</h2>
                 <p className="lg:max-w-110 md:max-w-120 text-[#b5b5b5]">This is an awesome website to read about our solar system. Connect with us for see details about any planet of our solar System.</p>
+                <h1 className="text-6xl">Planet {PText}</h1>    
             </div>
-            <div className="relative flex items-center flex-col gap-4 justify-center ">
+            <div className="relative flex items-center flex-col py-10 gap-4 justify-start ">
                 <h2 className="text-4xl font-mono">Choose Your Fav Planet!</h2>
-                {isSelect? FakeTemp:realTemp}    
+                {isSelect? FakeTemp:realTemp}
             </div>
-            <h1 className="w-full ml-5 text-center text-9xl">{PText}</h1>
-            <h1 className="w-full text-center text-9xl">Planet</h1>
         </section>
     </>
   )

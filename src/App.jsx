@@ -15,7 +15,6 @@ const App = () => {
         <Navbar/>
         <HeroText PlanetId={PlanetId}/>
       </section>
-      <h1>Hello world</h1>
     </>
   )
 }
