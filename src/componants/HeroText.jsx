@@ -3,6 +3,7 @@ const HeroText = (props) => {
     const [isSelect,setSelect] = useState(false);
     const [PText,setPText] = useState("Earth");
     const [btnBg,setBtnBg] = useState("blue");
+    console.log(btnBg);
     const realTemp = (
         <>
             <button onClick={()=>{
@@ -10,12 +11,12 @@ const HeroText = (props) => {
                     if(isSelect===true){
                         alert("Your choosen Planet is Mars");
                     }
-                }} className={`p-5 rounded-2xl cursor-pointer text-2xl bg-${btnBg}-500 text-white`}>Choose Now</button>
+                }} className={`p-5 rounded-2xl z-1000 cursor-pointer text-2xl backdrop-blur-[2px] bg-[rgba(255,255,255,0.1)] text-white`}>Choose Now</button>
         </>
     )
     const FakeTemp = (
         <>
-            <div className="absolute transition-all druation-150 ease-in flex flex-col gap-2 p-2 px-5  w-120 h-50 bg-[rgb(17,17,17)] rounded-2xl border border-[#ddd]">
+            <div className="absolute z-1000 transition-all druation-150 ease-in flex flex-col gap-2 p-2 px-5  w-120 h-50 bg-[rgba(17,17,17,0.2)] backdrop-blur-2xl rounded-2xl border border-[#ddd]">
                 <span className=" text-lg text-end cursor-pointer" onClick={()=>{
                     setSelect(!isSelect)
                 }}>❌</span>

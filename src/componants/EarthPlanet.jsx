@@ -6,8 +6,9 @@ const EarthPlanet = (props) => {
     
     useEffect(()=>{
         async function getPdata(){
-            const response = await fetch("./data/planet.json");
+            const response = await fetch(`${import.meta.env.BASE_URL}data/planet.json`);
             const data = await response.json();
+            
             setPlanetdata(data);
         }
         getPdata();
